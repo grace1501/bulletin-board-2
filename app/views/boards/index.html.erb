@@ -46,8 +46,7 @@
         <%= a_board.name %>
       </a>
       <div>
-        <% user_email = User.where({ :id => a_board.user_id }).at(0).email %>
-        <%= user_email %>
+        <%= User.where({ :id => a_board.user_id }).at(0).email %>
       </div>
     </li>
   <% end %>
